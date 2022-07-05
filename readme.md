@@ -7,28 +7,40 @@ Empaquetar se refiera a que va a recuperar todos los modulos y todas las partes 
 
 ## Pasos a seguir para crear proyecto desde cero
 
-1. crear una carpeta
+1. Crear una carpeta para el proyecto
 
-2. initializar npm en ese proyecto "npm init -y"
+2. Inicializar npm en ese proyecto
+
+```
+npm init
+```
 
 3. Crear carpeta "src" y dentro un archivo de prueba "prueba.js" y un punto de entrada "index.js"
 
 4. Dentro de index.js llamamos a nuestra función de prueba y la ejecutamos para ver si funciona correctamente
 
-5. instalamos webpack. "npm install --save-dev webpack webpack-cli"
+5. Instalamos webpack
+
+```
+ npm install --save-dev webpack webpack-cli
+```
 
 6. Hacemos npm run build para que webpack compile todo el proyecto.
 
 7. Cambia en package.json el modo a desarrollo. "webpack --mode=development"
 
 8. Vovlemos a correr el comando npm run build.
-   Webpack por defecto entiende que nuestro punto de entrada de la aplicación se encuentra dentro de src y se llama index.js. Esto se debe a que es un patron muy comun.
-   Y por defecto webpack crea una carpeta dist que es donde se va a guardar el archivo que se va a generar.
+
+    - Webpack por defecto entiende que nuestro punto de entrada de la aplicación se encuentra dentro de src y se llama index.js. Esto se debe a que es un patron muy comun.
+      Y por defecto webpack crea una carpeta dist que es donde se va a guardar el archivo que se va a generar.
 
 9. Para modificar las configuraciones de webpack creamos el archivo webpack.config.js
 
 10. Si quisieramos cambiar el output de la aplicacion, podemos hacerlo en el archivo de configuración de webpack.
-    Para conseguir una ruta absoluta en node debemos hacer un require('path').resolve(\_\_dirname, 'build')
+    - Para conseguir una ruta absoluta en node debemos hacer
+    ```javascript
+        require('path').resolve(\_\_dirname, 'build')
+    ```
 
 \_\_dirname es un variable que lo que hace es saber en que ruta se encuentra el archivo que le indicamos
 
