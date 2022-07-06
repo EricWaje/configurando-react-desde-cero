@@ -219,4 +219,4 @@ module.exports = (env, argv) => {
 };
 ```
 
-El [name] va a ser "main" en nuestro caso y el [contenthash] lo que hace es que dependiendo el contenido que tenga ese fichero va a añadirle un hash diferente para que lo puedas cachear. Cuando cambie ese contenido, el hash de ese fichero será otro
+El [name] va a ser "main" en nuestro caso y el [contenthash] lo que hace es que dependiendo el contenido que tenga ese fichero va a añadirle un hash diferente. Cuando cambie ese contenido, el hash de ese fichero será otro
