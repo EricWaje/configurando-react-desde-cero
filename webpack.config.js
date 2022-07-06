@@ -14,6 +14,7 @@ module.exports = (env, argv) => {
             rules: [
                 //reglas para js
                 //utilizamos regex para la finalización de archivos
+                //Las expresiones regulares son patrones utilizados para encontrar una determinada combinación de caracteres dentro de una cadena de texto.
                 {
                     test: /\.js$/, //   /.(js|jsx)$/
                     exclude: /node_modules/,

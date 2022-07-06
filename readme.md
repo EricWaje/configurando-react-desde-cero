@@ -15,11 +15,9 @@ Empaquetar se refiera a que va a recuperar todos los modulos y todas las partes 
 npm init
 ```
 
-3. Crear carpeta "src" y dentro un archivo de prueba "prueba.js" y un punto de entrada "index.js"
+3. Crear carpeta "src" y dentro un punto de entrada "index.js"
 
-4. Dentro de index.js llamamos a nuestra función de prueba y la ejecutamos para ver si funciona correctamente
-
-5. Instalamos webpack
+4. Instalamos webpack
 
 ```
  npm install --save-dev webpack webpack-cli
