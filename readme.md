@@ -90,11 +90,14 @@ export default App;
 
 ## Acá viene Babel 😎
 
+Babel es un transpilador de código.  
+Un transpilador te permite escribir un programa en determinada sintaxis, la agarra y la transofrma a una sitaxis válida de ese lenguaje real.
+
 ### Que es un loader o un cargador?
 
 Es una biblioteca que se encarga de cargar un archivo y convertirlo en un objeto que webpack puede tratar.
-Es un compilador de código.  
-Que loader necesitamos? [Babel](https://babeljs.io/).
+Que loader necesitamos? El que nos provee [Babel](https://babeljs.io/).  
+Create-react-app funciona con babel por defecto.
 
 Como se configura un loader? 🤔
 
